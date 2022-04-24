@@ -1052,7 +1052,14 @@ h3.my_profession {
         height: 272px;
     }
 }
-
+@media(max-width:365px){
+    .about .about_content .personal_info .info_item p span {
+        font-size: 12px;
+    }
+    .portfolio .portfolio_item_inner {
+        margin-left: -13px;
+    }
+}
 @media (max-width:393px) {
     .portfolio .portfolio_item_inner {
         width: 323px;
