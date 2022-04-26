@@ -179,12 +179,6 @@ ul {
 #click{
     display: none;
 }
-/* @media (max-width:1500px){
-    .aside .nav_toggler {
-        display: block;
-    }
-    #click:checked ~ 
-} */
 
 .nav_toggler span {
     height: 2px;
@@ -554,70 +548,6 @@ h3.my_profession {
     color: var(--text-black-700);
 }
 
-/* services */
-.service .container {
-    padding-bottom: 40px;
-}
-
-.service .service_item {
-    margin-bottom: 30px;
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-
-}
-
-.service .service_item .service_item_inner {
-    background-color: var(--bg-white-100);
-    border: 1px solid var(--bg-white-50);
-    border-radius: 10px;
-    padding: 30px 15px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.service .service_item .service_item_inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
-
-.service .service_item .service_item_inner .icon {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 30px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.service .service_item .service_item_inner .icon .fa-solid {
-    font-size: 40px;
-    line-height: 60px;
-    color: var(--skin-color);
-    transition: all 0.3s ease;
-}
-
-.service .service_item .service_item_inner:hover .icon {
-    background-color: var(--skin-color);
-}
-
-.service .service_item .service_item_inner:hover .icon .fa-solid {
-    color: #ffffff;
-    font-size: 25px;
-}
-
-.service .service_item .service_item_inner h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.service .service_item .service_item_inner p {
-    font-size: 16px;
-    color: var(--text-black-900);
-    line-height: 25px;
-}
 
 /* portfolio */
 .portfolio .container {
@@ -640,9 +570,6 @@ h3.my_profession {
     max-width: 33.33%;
     margin-bottom: 30px;
 }
-.portfolio .portfolio_item .portfolio_item_inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
 
 .portfolio .portfolio_item_inner {
     border: 6px solid var(--bg-white-100);
@@ -651,14 +578,30 @@ h3.my_profession {
     cursor: pointer;
     width: 350px;
     height: 280px;
+    position: relative;
+    transition: all 0.s ease;
 }
-
+.portfolio .portfolio_item_inner .portfolio_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ h2{
+    color: var(--text-black-900);
+}
 .portfolio .portfolio_item_inner .portfolio_img img {
     width: 350px;
     height: 280px;
     display: block;
 }
-
+.portfolio .portfolio_item_inner:hover img{
+    width: 350px;
+    height: 280px;
+    position: absolute;
+    background-image: linear-gradient(rgb(12,12,12),rgba(12,12,12));
+    display: none;
+}
 /* contact */
 
 .contact_title {
@@ -781,24 +724,6 @@ h3.my_profession {
     .aside {
         left: -270px;
     }
-
-    /* #click:checked ~ .responsiveNavigation{
-        left: 0;
-        display: none;
-    } */
-    /* .aside .logo{
-        left: 330px;
-        top: -27px;
-    }
-    .aside .logo a::before {
-        left: -19px;
-    bottom: 53px;
-    }
-    
-    .aside .logo a::after {
-        right: -151px;
-    top: 72px;
-    } */
 
     .main_content {
         padding-left: 0;
@@ -1058,6 +983,9 @@ h3.my_profession {
     }
     .portfolio .portfolio_item_inner {
         margin-left: -13px;
+    }
+    .copyright {
+        font-size: 13px;
     }
 }
 @media (max-width:393px) {
